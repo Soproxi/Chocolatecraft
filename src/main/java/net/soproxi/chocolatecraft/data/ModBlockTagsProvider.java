@@ -20,7 +20,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
         getOrCreateBuilder(Tags.Blocks.ORES)
                 .addTag(ModTags.Blocks.ORES_CHOCOLATE);
         getOrCreateBuilder(ModTags.Blocks.STORAGE_BLOCKS_CHOCOLATE)
-                .add(ModBlocks.CHOCOLATE_BLOCK.get());
+                .add(ModBlocks.MILK_CHOCOLATE_BLOCK.get());
         getOrCreateBuilder(Tags.Blocks.STORAGE_BLOCKS)
                 .addTag(ModTags.Blocks.STORAGE_BLOCKS_CHOCOLATE);
     }

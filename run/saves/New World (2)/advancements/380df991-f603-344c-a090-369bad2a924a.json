@@ -41,18 +41,18 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/granite_slab_from_granite_stonecutting": {
-    "criteria": {
-      "has_granite": "2021-01-31 16:41:42 +0000"
-    },
-    "done": true
-  },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
       "minecraft:skeleton": "2021-01-31 16:41:23 +0000",
       "minecraft:zombie": "2021-01-31 16:42:00 +0000"
     },
     "done": false
+  },
+  "minecraft:recipes/building_blocks/granite_slab_from_granite_stonecutting": {
+    "criteria": {
+      "has_granite": "2021-01-31 16:41:42 +0000"
+    },
+    "done": true
   },
   "minecraft:recipes/building_blocks/polished_granite_from_granite_stonecutting": {
     "criteria": {
@@ -102,18 +102,19 @@
     },
     "done": true
   },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:beach": "2021-01-31 17:42:18 +0000",
+      "minecraft:river": "2021-01-31 16:41:40 +0000",
+      "minecraft:plains": "2021-01-31 16:39:21 +0000"
+    },
+    "done": false
+  },
   "minecraft:recipes/misc/bone_meal": {
     "criteria": {
       "has_bone": "2021-01-31 16:41:27 +0000"
     },
     "done": true
-  },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:river": "2021-01-31 16:41:40 +0000",
-      "minecraft:plains": "2021-01-31 16:39:21 +0000"
-    },
-    "done": false
   },
   "minecraft:recipes/building_blocks/cobblestone_stairs": {
     "criteria": {
@@ -151,6 +152,12 @@
     },
     "done": true
   },
+  "minecraft:story/upgrade_tools": {
+    "criteria": {
+      "stone_pickaxe": "2021-01-31 16:41:03 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/cobblestone_wall": {
     "criteria": {
       "has_cobblestone": "2021-01-31 16:41:11 +0000"
@@ -160,12 +167,6 @@
   "minecraft:recipes/building_blocks/polished_granite_slab_from_granite_stonecutting": {
     "criteria": {
       "has_granite": "2021-01-31 16:41:42 +0000"
-    },
-    "done": true
-  },
-  "minecraft:story/upgrade_tools": {
-    "criteria": {
-      "stone_pickaxe": "2021-01-31 16:41:03 +0000"
     },
     "done": true
   },

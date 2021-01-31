@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chocolatecraft:block/chocolate_block"
+    "all": "chocolatecraft:block/milk_chocolate_block"
   }
 }

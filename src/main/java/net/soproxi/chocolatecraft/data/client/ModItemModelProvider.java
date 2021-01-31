@@ -15,8 +15,10 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        withExistingParent("chocolate_block", modLoc("block/chocolate_block"));
+        withExistingParent("milk_chocolate_block", modLoc("block/milk_chocolate_block"));
         withExistingParent("chocolate_ore", modLoc("block/chocolate_ore"));
+        withExistingParent("dark_chocolate_block", modLoc("block/dark_chocolate_block"));
+        withExistingParent("white_chocolate_block", modLoc("block/white_chocolate_block"));
 
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
 

@@ -13,7 +13,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        simpleBlock(ModBlocks.CHOCOLATE_BLOCK.get());
+        simpleBlock(ModBlocks.MILK_CHOCOLATE_BLOCK.get());
+        simpleBlock(ModBlocks.DARK_CHOCOLATE_BLOCK.get());
+        simpleBlock(ModBlocks.WHITE_CHOCOLATE_BLOCK.get());
         simpleBlock(ModBlocks.CHOCOLATE_ORE.get());
     }
 }

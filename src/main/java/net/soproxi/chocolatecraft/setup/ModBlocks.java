@@ -6,17 +6,23 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraftforge.fml.RegistryObject;
 import net.soproxi.chocolatecraft.ChocolateCraft;
+
 
 import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final RegistryObject<Block> CHOCOLATE_ORE = register("chocolate_ore", () ->
             new Block(AbstractBlock.Properties.create(Material.ROCK).hardnessAndResistance(3,10).harvestLevel(2).sound(SoundType.STONE).setRequiresTool()));
-    public static final RegistryObject<Block> CHOCOLATE_BLOCK = register("chocolate_block", () ->
+
+    // CHOCOLATE STORAGE BLOCKS
+    public static final RegistryObject<Block> MILK_CHOCOLATE_BLOCK = register("milk_chocolate_block", () ->
             new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(3,10).sound(SoundType.METAL).setRequiresTool()));
+    public static final RegistryObject<Block> DARK_CHOCOLATE_BLOCK = register("dark_chocolate_block", () ->
+            new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(3, 10).sound(SoundType.METAL).setRequiresTool()));
+    public static final RegistryObject<Block> WHITE_CHOCOLATE_BLOCK = register("white_chocolate_block", () ->
+            new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(3, 10).sound(SoundType.METAL).setRequiresTool()));
 
 
     static void register() {}

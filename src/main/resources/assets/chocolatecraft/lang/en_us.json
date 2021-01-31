@@ -1,7 +1,9 @@
 {
   "item.chocolatecraft.milk_chocolate_bar": "Milk Chocolate Bar",
   "block.chocolatecraft.chocolate_ore": "Chocolate Ore",
-  "block.chocolatecraft.chocolate_block": "Block of Chocolate",
+  "block.chocolatecraft.milk_chocolate_block": "Block of Milk Chocolate",
+  "block.chocolatecraft.white_chocolate_block": "Block of White Chocolate",
+  "block.chocolatecraft.dark_chocolate_block": "Block of Dark Chocolate",
   "itemGroup.chocolatecraft": "ChocolateCraft",
   "item.chocolatecraft.raw_chocolate_ore": "Raw Chocolate Chips",
   "item.chocolatecraft.dark_chocolate_bar": "Dark Chocolate Bar",
