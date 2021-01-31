@@ -26,6 +26,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         builder(itemGenerated, "raw_chocolate_ore");
         builder(itemGenerated, "dark_chocolate_bar");
         builder(itemGenerated, "white_chocolate_bar");
+        builder(itemGenerated, "soy_bean");
     }
 
     private ItemModelBuilder builder(ModelFile itemGenerated, String name) {

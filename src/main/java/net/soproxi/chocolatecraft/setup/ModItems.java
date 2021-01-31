@@ -1,5 +1,6 @@
 package net.soproxi.chocolatecraft.setup;
 
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Food;
 import net.minecraft.item.Item;
 import net.minecraft.potion.EffectInstance;
@@ -26,6 +27,11 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_CHOCOLATE_ORE = Registration.ITEMS.register("raw_chocolate_ore", () ->
             new Item(new Item.Properties().group(ChocolateCraft.CHOCOLATECRAFT_GROUP)
             .food(new Food.Builder().fastToEat().hunger(1).saturation(0.1f).build())));
+
+    // CROPS
+    public static final RegistryObject<Item> SOY_BEAN = Registration.ITEMS.register("soy_bean", () ->
+            new BlockItem(ModBlocks.SOY_BEAN_CROP.get(), new Item.Properties().group(ChocolateCraft.CHOCOLATECRAFT_GROUP)
+            .food(new Food.Builder().fastToEat().hunger(1).saturation(0.1f).effect(() -> new EffectInstance(Effects.POISON, 200, 1), 1.0f).build())));
 
 
     static void register() {}

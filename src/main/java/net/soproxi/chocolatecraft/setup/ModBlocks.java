@@ -25,6 +25,11 @@ public class ModBlocks {
             new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(3, 10).sound(SoundType.METAL).setRequiresTool()));
 
 
+    // CROPS
+    public static final RegistryObject<Block> SOY_BEAN_CROP = register("soy_bean_crop", () ->
+            new Block(AbstractBlock.Properties.create(Material.PLANTS).hardnessAndResistance(0f).doesNotBlockMovement().tickRandomly().sound(SoundType.PLANT)));
+
+
     static void register() {}
 
     private static <T extends Block>RegistryObject<T> registerNoItem(String name, Supplier<T> block) {

@@ -1,6 +1,8 @@
 package net.soproxi.chocolatecraft;
 
 import net.minecraft.block.Blocks;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -14,6 +16,7 @@ import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.soproxi.chocolatecraft.setup.ModBlocks;
 import net.soproxi.chocolatecraft.setup.ModItems;
 import net.soproxi.chocolatecraft.setup.Registration;
 import net.soproxi.chocolatecraft.world.OreGeneration;
@@ -74,6 +77,7 @@ public class ChocolateCraft
 
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
+        RenderTypeLookup.setRenderLayer(ModBlocks.SOY_BEAN_CROP.get(), RenderType.getCutout());
         LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
     }
 
