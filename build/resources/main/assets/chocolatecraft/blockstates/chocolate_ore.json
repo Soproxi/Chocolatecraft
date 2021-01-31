@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chocolatecraft:block/chocolate_ore"
+    }
+  }
+}

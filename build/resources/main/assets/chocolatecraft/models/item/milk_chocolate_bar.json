@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "chocolatecraft:item/milk_chocolate_bar"
+  }
+}
