@@ -26,4 +26,9 @@ forge*changelog.txt
 
 logs/
 
+run/
+
+build/
+.gradle/
+
 src/generated/resources/.cache/cache
