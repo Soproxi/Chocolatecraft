@@ -1,6 +1,7 @@
 package net.soproxi.chocolatecraft.setup;
 
 import net.minecraft.block.Block;
+import net.minecraft.fluid.Fluid;
 import net.minecraft.item.Item;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ITag;
@@ -9,6 +10,7 @@ import net.minecraft.util.ResourceLocation;
 import net.soproxi.chocolatecraft.ChocolateCraft;
 
 public class ModTags {
+
     public static final class Blocks {
         public static final ITag.INamedTag<Block> ORES_CHOCOLATE = forge("ores/chocolate");
         public static final ITag.INamedTag<Block> STORAGE_BLOCKS_CHOCOLATE = forge("storage_blocks/chocolate");
@@ -37,4 +39,5 @@ public class ModTags {
         }
 
     }
+
 }

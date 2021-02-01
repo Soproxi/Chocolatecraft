@@ -2,8 +2,11 @@ package net.soproxi.chocolatecraft.setup;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.fluid.FlowingFluid;
+import net.minecraft.fluid.Fluid;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
@@ -37,6 +40,10 @@ public class ModBlocks {
 
     // MACHINES
 
+
+    // FLUIDS
+    public static final RegistryObject<FlowingFluidBlock> SOY_MILK = registerNoItem("soy_milk", () ->
+            new FlowingFluidBlock(() -> ModFluids.soy_milk, AbstractBlock.Properties.create(Material.WATER).doesNotBlockMovement().noDrops()));
 
     static void register() {}
 

@@ -10,5 +10,7 @@
   "item.chocolatecraft.white_chocolate_bar": "White Chocolate Bar",
   "item.chocolatecraft.soy_bean_crop": "Soy Bean",
   "item.chocolatecraft.cocoa_butter": "Cocoa Butter",
-  "block.chocolatecraft.soy_bean_crop": "Soy Bean"
+  "block.chocolatecraft.soy_bean_crop": "Soy Bean",
+  "block.chocolatecraft.soy_milk": "Soy Milk",
+  "item.chocolatecraft.soy_milk_bucket": "Soy Milk Bucket"
 }

@@ -1,6 +1,7 @@
 package net.soproxi.chocolatecraft.setup;
 
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.BucketItem;
 import net.minecraft.item.Food;
 import net.minecraft.item.Item;
 import net.minecraft.potion.EffectInstance;
@@ -38,6 +39,11 @@ public class ModItems {
     public static final RegistryObject<Item> COCOA_BUTTER = Registration.ITEMS.register("cocoa_butter", () ->
             new Item(new Item.Properties().group(ChocolateCraft.CHOCOLATECRAFT_GROUP)
                     .food(new Food.Builder().hunger(1).saturation(0.1f).build())));
+
+
+    // FLUID STUFF
+    public static final RegistryObject<BucketItem> SOY_MILK_BUCKET = Registration.ITEMS.register("soy_milk_bucket", () ->
+            new BucketItem(() -> ModFluids.soy_milk, new Item.Properties().group(ChocolateCraft.CHOCOLATECRAFT_GROUP).maxStackSize(1)));
 
 
     static void register() {}

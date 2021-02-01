@@ -1,11 +1,16 @@
 package net.soproxi.chocolatecraft.data.client;
 
 import net.minecraft.data.DataGenerator;
+import net.minecraft.fluid.Fluid;
+import net.minecraft.tags.FluidTags;
+import net.minecraft.tags.Tag;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.soproxi.chocolatecraft.ChocolateCraft;
+
+import javax.swing.text.html.HTML;
 
 
 public class ModItemModelProvider extends ItemModelProvider {
@@ -26,8 +31,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         builder(itemGenerated, "raw_chocolate_ore");
         builder(itemGenerated, "dark_chocolate_bar");
         builder(itemGenerated, "white_chocolate_bar");
-        builder(itemGenerated, "soy_bean_crop");
+        builder(itemGenerated, "soy_bean");
         builder(itemGenerated, "cocoa_butter");
+        builder(itemGenerated, "soy_milk_bucket");
     }
 
     private ItemModelBuilder builder(ModelFile itemGenerated, String name) {
