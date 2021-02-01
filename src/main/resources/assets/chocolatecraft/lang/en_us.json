@@ -8,5 +8,7 @@
   "item.chocolatecraft.raw_chocolate_ore": "Raw Chocolate Chips",
   "item.chocolatecraft.dark_chocolate_bar": "Dark Chocolate Bar",
   "item.chocolatecraft.white_chocolate_bar": "White Chocolate Bar",
-  "item.chocolatecraft.soy_bean": "Soy Bean"
+  "item.chocolatecraft.soy_bean_crop": "Soy Bean",
+  "item.chocolatecraft.cocoa_butter": "Cocoa Butter",
+  "block.chocolatecraft.soy_bean_crop": "Soy Bean"
 }

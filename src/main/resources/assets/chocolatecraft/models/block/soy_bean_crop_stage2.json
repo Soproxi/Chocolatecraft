@@ -1,6 +1,6 @@
 {
   "parent": "block/crop",
   "textures": {
-    "crop": "chocolatecraft:blocks/soy_bean_crop_stage2"
+    "crop": "chocolatecraft:block/soy_bean_crop_stage2"
   }
 }

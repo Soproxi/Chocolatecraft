@@ -31,7 +31,13 @@ public class ModItems {
     // CROPS
     public static final RegistryObject<Item> SOY_BEAN = Registration.ITEMS.register("soy_bean", () ->
             new BlockItem(ModBlocks.SOY_BEAN_CROP.get(), new Item.Properties().group(ChocolateCraft.CHOCOLATECRAFT_GROUP)
-            .food(new Food.Builder().fastToEat().hunger(1).saturation(0.1f).effect(() -> new EffectInstance(Effects.POISON, 200, 1), 1.0f).build())));
+            .food(new Food.Builder().fastToEat().hunger(1).saturation(0.1f).effect(() -> new EffectInstance(Effects.POISON, 100, 1), 1.0f).build())));
+
+
+    // COCOA BUTTER
+    public static final RegistryObject<Item> COCOA_BUTTER = Registration.ITEMS.register("cocoa_butter", () ->
+            new Item(new Item.Properties().group(ChocolateCraft.CHOCOLATECRAFT_GROUP)
+                    .food(new Food.Builder().hunger(1).saturation(0.1f).build())));
 
 
     static void register() {}

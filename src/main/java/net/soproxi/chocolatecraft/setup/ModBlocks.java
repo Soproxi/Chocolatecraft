@@ -7,12 +7,17 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.soproxi.chocolatecraft.ChocolateCraft;
+import net.soproxi.chocolatecraft.setup.blocks.SoyBeanCropsBlock;
 
 
+import java.util.Properties;
 import java.util.function.Supplier;
 
 public class ModBlocks {
+
     public static final RegistryObject<Block> CHOCOLATE_ORE = register("chocolate_ore", () ->
             new Block(AbstractBlock.Properties.create(Material.ROCK).hardnessAndResistance(3,10).harvestLevel(2).sound(SoundType.STONE).setRequiresTool()));
 
@@ -26,8 +31,11 @@ public class ModBlocks {
 
 
     // CROPS
-    public static final RegistryObject<Block> SOY_BEAN_CROP = register("soy_bean_crop", () ->
-            new Block(AbstractBlock.Properties.create(Material.PLANTS).hardnessAndResistance(0f).doesNotBlockMovement().tickRandomly().sound(SoundType.PLANT)));
+    public static final RegistryObject<Block> SOY_BEAN_CROP = registerNoItem("soy_bean_crop", () ->
+        new SoyBeanCropsBlock(AbstractBlock.Properties.create(Material.PLANTS).hardnessAndResistance(0f).doesNotBlockMovement().tickRandomly().sound(SoundType.PLANT)));
+
+
+    // MACHINES
 
 
     static void register() {}

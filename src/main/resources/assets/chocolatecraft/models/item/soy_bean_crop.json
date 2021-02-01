@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "chocolatecraft:item/soy_bean_crop"
+  }
+}

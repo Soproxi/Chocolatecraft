@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "chocolatecraft:soy_bean_crop"
+          "name": "chocolatecraft:soy_bean"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "chocolatecraft:soy_bean_crop",
+          "name": "chocolatecraft:soy_bean",
           "functions": [
             {
               "function": "minecraft:apply_bonus",
@@ -32,7 +32,7 @@
       "conditions": [
         {
           "condition": "minecraft:block_state_property",
-          "block": "minecraft:soy_bean_crop",
+          "block": "chocolatecraft:soy_bean_crop",
           "properties": {
             "age": "7"
           }
