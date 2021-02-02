@@ -12,5 +12,9 @@
   "item.chocolatecraft.cocoa_butter": "Cocoa Butter",
   "block.chocolatecraft.soy_bean_crop": "Soy Bean",
   "block.chocolatecraft.soy_milk": "Soy Milk",
-  "item.chocolatecraft.soy_milk_bucket": "Soy Milk Bucket"
+  "item.chocolatecraft.soy_milk_bucket": "Soy Milk Bucket",
+  "item.chocolatecraft.jen_knife": "Cultist's Knife",
+
+  "item.jen_sound": "Jen Sound",
+  "item.jen_sound.sub": "Can you egg please?!"
 }

@@ -17,4 +17,6 @@ public class ModFluids {
             return FluidTags.makeWrapperTag("chocolatecraft:" + name);
         }
     }
+
+    static void register() {}
 }

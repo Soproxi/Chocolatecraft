@@ -1,0 +1,28 @@
+{
+  "item.jen_sound": {
+    "category": "item",
+    "sounds": [
+      {
+        "name": "chocolatecraft:item/jen_sound",
+        "stream": true
+      },
+      {
+        "name": "chocolatecraft:item/jen_sound2",
+        "stream": true
+      },
+      {
+        "name": "chocolatecraft:item/jen_sound3",
+        "stream": true
+      },
+      {
+        "name": "chocolatecraft:item/jen_sound4",
+        "stream": true
+      },
+      {
+        "name": "chocolatecraft:item/jen_sound5",
+        "stream": true
+      }
+    ],
+    "subtitle": "item.jen_sound.sub"
+  }
+}

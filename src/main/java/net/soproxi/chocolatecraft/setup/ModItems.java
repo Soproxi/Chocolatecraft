@@ -1,13 +1,11 @@
 package net.soproxi.chocolatecraft.setup;
 
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.BucketItem;
-import net.minecraft.item.Food;
-import net.minecraft.item.Item;
+import net.minecraft.item.*;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraftforge.fml.RegistryObject;
 import net.soproxi.chocolatecraft.ChocolateCraft;
+import net.soproxi.chocolatecraft.setup.items.JenItem;
 
 public class ModItems {
     // CHOCOLATE BARS
@@ -43,7 +41,11 @@ public class ModItems {
 
     // FLUID STUFF
     public static final RegistryObject<BucketItem> SOY_MILK_BUCKET = Registration.ITEMS.register("soy_milk_bucket", () ->
-            new BucketItem(() -> ModFluids.soy_milk, new Item.Properties().group(ChocolateCraft.CHOCOLATECRAFT_GROUP).maxStackSize(1)));
+            new BucketItem(() -> ModFluids.soy_milk, new Item.Properties().containerItem(Items.BUCKET).group(ChocolateCraft.CHOCOLATECRAFT_GROUP).maxStackSize(1)));
+
+
+    //SILLY STUFF
+    public static final RegistryObject<Item> JEN_KNIFE = Registration.ITEMS.register("jen_knife", JenItem::new);
 
 
     static void register() {}
