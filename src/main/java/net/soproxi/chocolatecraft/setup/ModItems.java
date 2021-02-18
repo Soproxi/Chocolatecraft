@@ -40,7 +40,7 @@ public class ModItems {
 
 
     // FLUID STUFF
-    public static final RegistryObject<BucketItem> SOY_MILK_BUCKET = Registration.ITEMS.register("soy_milk_bucket", () ->
+    public static final RegistryObject<Item> SOY_MILK_BUCKET = Registration.ITEMS.register("soy_milk_bucket", () ->
             new BucketItem(() -> ModFluids.soy_milk, new Item.Properties().containerItem(Items.BUCKET).group(ChocolateCraft.CHOCOLATECRAFT_GROUP).maxStackSize(1)));
 
 

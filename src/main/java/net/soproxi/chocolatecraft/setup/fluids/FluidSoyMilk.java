@@ -1,5 +1,6 @@
 package net.soproxi.chocolatecraft.setup.fluids;
 
+
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.fluid.FlowingFluid;
@@ -14,22 +15,22 @@ import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.IWorldReader;
 import net.minecraftforge.fluids.FluidAttributes;
-import net.minecraftforge.fml.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
 import net.soproxi.chocolatecraft.ChocolateCraft;
 import net.soproxi.chocolatecraft.setup.ModBlocks;
 import net.soproxi.chocolatecraft.setup.ModFluids;
 import net.soproxi.chocolatecraft.setup.ModItems;
+import net.soproxi.chocolatecraft.setup.Registration;
+
 
 public abstract class FluidSoyMilk extends FlowingFluid {
     @Override
     public Fluid getFlowingFluid() {
-        return ModFluids.flowing_soy_milk;
+        return ModFluids.flowing_soy_milk.getFlowingFluid();
     }
 
     @Override
     public Fluid getStillFluid() {
-        return ModFluids.soy_milk;
+        return ModFluids.soy_milk.getStillFluid();
     }
 
     @Override
@@ -39,7 +40,6 @@ public abstract class FluidSoyMilk extends FlowingFluid {
 
     @Override
     protected void beforeReplacingBlock(IWorld worldIn, BlockPos pos, BlockState state) {
-
     }
 
     @Override
@@ -59,7 +59,7 @@ public abstract class FluidSoyMilk extends FlowingFluid {
 
     @Override
     protected boolean canDisplace(FluidState fluidState, IBlockReader blockReader, BlockPos pos, Fluid fluid, Direction direction) {
-        return direction == Direction.DOWN && !fluid.isIn(ModFluids.Fluids.SOY_MILK);
+        return direction == Direction.DOWN && !fluid.isIn(ModFluids.Tags.SOY_MILK);
     }
 
     @Override
@@ -87,6 +87,7 @@ public abstract class FluidSoyMilk extends FlowingFluid {
         return FluidAttributes.builder(new ResourceLocation(ChocolateCraft.MOD_ID, "textures/block/soy_milk_still"),new ResourceLocation(ChocolateCraft.MOD_ID, "textures/block/soy_milk_flowing"))
                 .translationKey("block.chocolatecraft.soy_milk")
                 .build(this);
+
     }
 
     public static class Flowing extends FluidSoyMilk {
@@ -108,8 +109,7 @@ public abstract class FluidSoyMilk extends FlowingFluid {
         }
     }
 
-    public static class Source extends FluidSoyMilk {
-
+    public static class Source extends  FluidSoyMilk {
         @Override
         public boolean isSource(FluidState state) {
             return true;

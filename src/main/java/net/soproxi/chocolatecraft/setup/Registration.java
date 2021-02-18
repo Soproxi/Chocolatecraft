@@ -4,6 +4,7 @@ import net.minecraft.block.Block;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
@@ -29,5 +30,6 @@ public class Registration {
         ModItems.register();
         ModBlocks.register();
         ModSounds.register();
+        ModFluids.register();
     }
 }
