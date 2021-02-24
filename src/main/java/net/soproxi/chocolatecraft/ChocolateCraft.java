@@ -34,7 +34,7 @@ public class ChocolateCraft
     public static final ItemGroup CHOCOLATECRAFT_GROUP = new ChocolateCraftGroup("chocolatecraft");
 
 
-
+    // Creative tab
     public static class ChocolateCraftGroup extends ItemGroup {
 
         public ChocolateCraftGroup(String label) {
@@ -47,8 +47,10 @@ public class ChocolateCraft
         }
     }
 
-    // Directly reference a log4j logger.
+
+    // Chocolatecraft Logger instance
     private static final Logger LOGGER = LogManager.getLogger(MOD_NAME);
+
 
     public ChocolateCraft() {
 
@@ -100,4 +102,5 @@ public class ChocolateCraft
         // do something when the server starts
         LOGGER.info("HELLO from server starting");
     }
+
 }

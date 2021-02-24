@@ -2,6 +2,8 @@ package net.soproxi.chocolatecraft.setup;
 
 import net.minecraft.block.Block;
 import net.minecraft.fluid.Fluid;
+import net.minecraft.inventory.container.Container;
+import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
@@ -18,6 +20,7 @@ public class Registration {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ChocolateCraft.MOD_ID);
     public static final DeferredRegister<Fluid> FLUIDS = DeferredRegister.create(ForgeRegistries.FLUIDS, ChocolateCraft.MOD_ID);
     public static final DeferredRegister<SoundEvent> SOUNDS = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, ChocolateCraft.MOD_ID);
+    public static final DeferredRegister<ContainerType<?>> CONTAINERS = DeferredRegister.create(ForgeRegistries.CONTAINERS, ChocolateCraft.MOD_ID);
 
 
     public static void register() {
@@ -26,10 +29,12 @@ public class Registration {
         ITEMS.register(modEventBus);
         FLUIDS.register(modEventBus);
         SOUNDS.register(modEventBus);
+        CONTAINERS.register(modEventBus);
 
         ModItems.register();
         ModBlocks.register();
         ModSounds.register();
         ModFluids.register();
+
     }
 }

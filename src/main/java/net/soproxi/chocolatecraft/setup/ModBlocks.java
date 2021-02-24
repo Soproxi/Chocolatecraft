@@ -5,21 +5,13 @@ import net.minecraft.block.Block;
 import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
-import net.minecraft.fluid.FlowingFluid;
-import net.minecraft.fluid.Fluid;
-import net.minecraft.fluid.WaterFluid;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
 import net.soproxi.chocolatecraft.ChocolateCraft;
 import net.soproxi.chocolatecraft.setup.blocks.SoyBeanCropsBlock;
-import net.soproxi.chocolatecraft.setup.fluids.FluidSoyMilk;
 
 
-import java.util.Properties;
 import java.util.function.Supplier;
 
 public class ModBlocks {
