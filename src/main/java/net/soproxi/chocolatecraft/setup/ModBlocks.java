@@ -9,6 +9,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
 import net.soproxi.chocolatecraft.ChocolateCraft;
+import net.soproxi.chocolatecraft.setup.blocks.PeanutCropsBlock;
 import net.soproxi.chocolatecraft.setup.blocks.SoyBeanCropsBlock;
 
 
@@ -32,12 +33,14 @@ public class ModBlocks {
     public static final RegistryObject<Block> SOY_BEAN_CROP = registerNoItem("soy_bean_crop", () ->
         new SoyBeanCropsBlock(AbstractBlock.Properties.create(Material.PLANTS).hardnessAndResistance(0f).doesNotBlockMovement().tickRandomly().sound(SoundType.PLANT)));
 
+    public static final RegistryObject<Block> PEANUT_CROP = registerNoItem("peanut_crop", () ->
+            new PeanutCropsBlock(AbstractBlock.Properties.create(Material.PLANTS).hardnessAndResistance(0f).doesNotBlockMovement().tickRandomly().sound(SoundType.PLANT)));
+
 
     // MACHINES
 
-
     // FLUIDS
-    public static final RegistryObject<Block> SOY_MILK = registerNoItem("soy_milk", () ->
+    public static final RegistryObject<Block> SOY_MILK = register("soy_milk", () ->
             new FlowingFluidBlock(() -> ModFluids.soy_milk, AbstractBlock.Properties.create(Material.WATER).doesNotBlockMovement().noDrops()));
 
     static void register() {}

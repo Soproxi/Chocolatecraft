@@ -11,10 +11,8 @@
   "item.chocolatecraft.soy_bean_crop": "Soy Bean",
   "item.chocolatecraft.cocoa_butter": "Cocoa Butter",
   "block.chocolatecraft.soy_bean_crop": "Soy Bean",
-  "block.chocolatecraft.soy_milk": "Soy Milk",
+  "block.chocolatecraft.soy_milk": "TEST ITEM DO NOT USE",
   "item.chocolatecraft.soy_milk_bucket": "Soy Milk Bucket",
-  "item.chocolatecraft.jen_knife": "Cultist's Knife",
-
-  "item.jen_sound": "Jen Sound",
-  "item.jen_sound.sub": "Can you egg please?!"
+  "item.chocolatecraft.peanut_crop": "Peanut",
+  "block.chocolatecraft.peanut_crop": "Peanut"
 }

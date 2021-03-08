@@ -5,7 +5,6 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraftforge.fml.RegistryObject;
 import net.soproxi.chocolatecraft.ChocolateCraft;
-import net.soproxi.chocolatecraft.setup.items.JenItem;
 
 public class ModItems {
     // CHOCOLATE BARS
@@ -32,6 +31,9 @@ public class ModItems {
             new BlockItem(ModBlocks.SOY_BEAN_CROP.get(), new Item.Properties().group(ChocolateCraft.CHOCOLATECRAFT_GROUP)
             .food(new Food.Builder().fastToEat().hunger(1).saturation(0.1f).effect(() -> new EffectInstance(Effects.POISON, 100, 1), 1.0f).build())));
 
+    public static final RegistryObject<Item> PEANUT = Registration.ITEMS.register("peanut", () ->
+            new BlockItem(ModBlocks.PEANUT_CROP.get(), new Item.Properties().group(ChocolateCraft.CHOCOLATECRAFT_GROUP)
+            .food(new Food.Builder().fastToEat().hunger(1).saturation(0.1f).build())));
 
     // COCOA BUTTER
     public static final RegistryObject<Item> COCOA_BUTTER = Registration.ITEMS.register("cocoa_butter", () ->
@@ -45,7 +47,6 @@ public class ModItems {
 
 
     //SILLY STUFF
-    public static final RegistryObject<Item> JEN_KNIFE = Registration.ITEMS.register("jen_knife", JenItem::new);
 
 
     static void register() {}

@@ -84,7 +84,7 @@ public abstract class FluidSoyMilk extends FlowingFluid {
 
     @Override
     protected FluidAttributes createAttributes() {
-        return FluidAttributes.builder(new ResourceLocation(ChocolateCraft.MOD_ID, "textures/block/soy_milk_still"),new ResourceLocation(ChocolateCraft.MOD_ID, "textures/block/soy_milk_flowing"))
+        return FluidAttributes.builder(new ResourceLocation(ChocolateCraft.MOD_ID, "block/soy_milk_still"),new ResourceLocation(ChocolateCraft.MOD_ID, "block/soy_milk_flowing"))
                 .translationKey("block.chocolatecraft.soy_milk")
                 .build(this);
 

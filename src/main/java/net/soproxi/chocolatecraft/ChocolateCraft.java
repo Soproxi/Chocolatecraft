@@ -20,6 +20,7 @@ import net.soproxi.chocolatecraft.setup.ModBlocks;
 import net.soproxi.chocolatecraft.setup.ModItems;
 import net.soproxi.chocolatecraft.setup.Registration;
 import net.soproxi.chocolatecraft.world.OreGeneration;
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -79,6 +80,7 @@ public class ChocolateCraft
 
     private void doClientStuff(final FMLClientSetupEvent event) {
         RenderTypeLookup.setRenderLayer(ModBlocks.SOY_BEAN_CROP.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(ModBlocks.PEANUT_CROP.get(), RenderType.getCutout());
         // do something that can only be done on the client
         LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
     }
